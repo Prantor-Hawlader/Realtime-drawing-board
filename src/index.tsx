@@ -41,7 +41,8 @@ import useDeleteLayers from "./hooks/useDeleteLayers";
 import MultiplayerGuides from "./components/MultiplayerGuides";
 import Path from "./components/Path";
 import ToolsBar from "./components/ToolsBar";
-
+import logo from "./Image/Logos.png";
+import Image from "next/image";
 const MAX_LAYERS = 100;
 
 export default function Room() {
@@ -74,7 +75,7 @@ function Loading() {
   return (
     <div className={styles.container}>
       <div className={styles.loading}>
-        <img src="https://liveblocks.io/loading.svg" alt="Loading" />
+        <Image src={logo} width={500} height={500} alt="Loading" />
       </div>
     </div>
   );
